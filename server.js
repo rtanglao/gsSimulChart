@@ -11,7 +11,7 @@ var sys = require('sys'),
 
 function postValue(id, value) {
   var req, http = require('http'),
-      simulchart = http.createClient(80, 'awesometown.no.de'),
+      simulchart = http.createClient(80, 'simulchart.com'),
       simulchartPath = "/graphs/" + id + "/appendValue",
       body = "value=" + value,
       headers = { "Host": simulchart.host,

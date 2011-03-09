@@ -44,10 +44,10 @@ function update() {
               if (topicIds[index] == null) {
                   numNewTopics++;
                   topicIds[index] = true;
-                  console.log("New topic id " + id); 
+                  console.log("New topic id " + topic_id); 
               }
               else {
-                console.log("Old topic id " + id);
+                console.log("Old topic id " + topic_id);
               }
         });
         postValue(chartId, numNewTopics);

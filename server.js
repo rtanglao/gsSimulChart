@@ -6,7 +6,7 @@ var sys = require('sys'),
     gs = http.createClient(80, 'api.getsatisfaction.com'),
     gsPath = "/products/mozilla_thunderbird/topics.json?sort=recently_created&page=1&limit=30",
     chartId = "322dd869-0493-4485-b0b1-f64829508b1b",
-    interval = 5000,
+    interval = 15000,
     topicIds={};
 
 function postValue(id, value) {
